@@ -1,3 +1,10 @@
+@media (max-width: 1350px)
+    .test
+        &_block
+            &_first
+                width: 75%
+                height: 100%
+    
 @media (max-width: 768px)
     header
         min-height: 540px
@@ -46,13 +53,11 @@
                 margin-right: 32px
                 width: 48px
                 height: 46px
-                display: flex
                 font-size: 20px
                 line-height: 36px
                 position: relative
                 top: 12px
             &_desc
-                margin: 0 auto
                 width: 500px
                 &_header
                     font-size: 28px
@@ -67,7 +72,6 @@
         min-height: 930px
         padding: 100px 40px 120px 39px
         &_block
-            margin: 0 auto
             min-height: 526px
             display: block
             position: relative
@@ -76,38 +80,32 @@
                     width: 281px
                     height: 281px
             &_first
-                width: 514px
-                height: 375px
-                background-color: #24053e
+                // width: 514px
+                width: 74.5%
+                height: 80%
+                // height: 375px
                 position: absolute
                 bottom: 0px
                 left: 175px
                 padding: 48px 56px 56px 56px 
                 &_header
-                    font-family: "Fraunces 144pt - Semi Bold"
-                    color: #ffffff
                     font-size: 48px
-                    font-weight: 600
                     line-height: 56px
-                    text-align: left
                 &_text
-                    font-family: "Manrope"
                     margin-top: 24px
-                    color: #ffffff
                     font-size: 16px
-                    font-weight: 400
                     line-height: 32px
                     text-align: left
                 &_btn
-                    margin-top: 36px
                     width: 172px
                     height: 55px
-                    background-color: $main_color
-                    color: #24053e
                     font-size: 16px
-                    font-weight: 700
-                    letter-spacing: -0.18px
-                    line-height: 32px
-                    text-align: center
-                    &:active
-                        +active-btn
+    .xs-hidden
+        display: none
+
+@media (max-width: 376px)
+    .xs-hidden
+        display: none
+    header
+        width: 376px
+        max-height: 482px

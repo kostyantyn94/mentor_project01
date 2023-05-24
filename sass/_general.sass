@@ -1,0 +1,185 @@
+header
+    background: url('/images/header/bg_purple.png') center (center / cover) no-repeat
+    padding: 57px 165px 0 165px
+    min-height: 730px
+    position: relative
+    z-index: 10
+    .top
+        display: flex
+        justify-content: space-between
+        &_apply
+            color: #ffffff
+            font-family: 'Manrope'
+            font-size: 18px
+            font-weight: 700
+            letter-spacing: -0.18px
+            line-height: 32px
+            +border-bottom
+            cursor: pointer
+            &:hover
+                color: $main_color
+    .center
+        margin-top: 60px
+        h1
+            color: #ffffff
+            font-family: 'Fraunces 144pt'
+            font-size: 80px
+            font-weight: 600
+            line-height: 80px
+            text-align: center
+            span
+                text-decoration: underline
+                text-decoration-color: $main_color
+                text-decoration-thickness: 4px
+                text-underline-offset: 10px
+        &_btn
+            display: block
+            margin: 0 auto
+            margin-top: 28px
+            width: 161px
+            height: 61px
+            background-color: $main_color
+            cursor: pointer
+            color: #24053e
+            font-family: 'Manrope'
+            font-weight: 200
+            font-size: 18px
+            letter-spacing: -0.16px
+            line-height: 32px
+            text-align: center
+            &:hover
+                +active-btn
+                
+        &_img
+            &_left
+                position: absolute
+                top: 116px
+                left: -138px
+            &_right
+                overflow: auto
+                position: absolute
+                top: 314px
+                right: -48px
+            &_phone
+                position: absolute
+                left: 50%
+                transform: translateX(-48%)
+                margin-top: 50px
+
+.pros
+    position: relative
+    background: url('/images/numbers/bg.png') center (center / cover) no-repeat
+    min-height: 770px
+    z-index: 9
+    bottom: 40px
+    padding: 295px 160px 240px 160px
+    display: flex
+    justify-content: space-between
+    &_item
+        display: flex
+        flex-direction: column
+        width: 25%
+        &_number
+            font-family: 'Fraunces 144pt'
+            margin: 0 auto
+            width: 56px
+            height: 56px
+            border: 1px solid #584d62
+            border-radius: 31px
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #24053e
+            font-size: 24px
+            font-weight: 600
+            line-height: 40px
+            text-align: center
+        &_desc
+            margin: 0 auto
+            margin-top: 56px
+            &_header
+                font-family: 'Fraunces 144pt'
+                color: #24053e
+                font-size: 32px
+                font-weight: 600
+                line-height: 40px
+                text-align: center
+            &_text
+                font-family: 'Manrope'
+                margin-top: 28px
+                color: #24053e
+                font-size: 18px
+                font-weight: 400
+                line-height: 32px
+                text-align: center
+
+.test
+    min-height: 700px
+    padding: 110px 160px 110px 160px
+    margin: 0 auto
+    margin-top: -40px
+    &_block
+        margin: 0 auto
+        min-height: 650px
+        display: flex
+        justify-content: center
+        &_photo
+            img
+                width: 477px
+                height: 477px
+        &_first
+            width: 730px
+            height: 413px
+            background-color: #24053e
+            position: relative
+            bottom: -172px
+            left: -95px
+            padding: 64px 
+            &_header
+                font-family: 'Fraunces 144pt'
+                color: #ffffff
+                font-size: 56px
+                font-weight: 600
+                line-height: 64px
+                text-align: left
+            &_text
+                font-family: 'Manrope'
+                margin-top: 32px
+                color: #ffffff
+                font-size: 18px
+                font-weight: 400
+                line-height: 32px
+                text-align: left
+            &_btn
+                font-family: 'Manrope'
+                margin-top: 36px
+                width: 190px
+                height: 61px
+                background-color: $main_color
+                color: #24053e
+                font-size: 18px
+                font-weight: 700
+                letter-spacing: -0.18px
+                line-height: 32px
+                text-align: center
+                &:hover
+                    +active-btn
+    &_footer
+        margin: 0 auto
+        margin-top: 230px
+        width: 116px
+        height: 102px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &_logo
+            display: flex
+            justify-content: space-around
+            align-items: center
+        &_links
+            display: flex
+            justify-content: space-around
+            align-items: center
+            cursor: pointer
+            img:hover
+                filter: brightness(20%)
