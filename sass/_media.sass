@@ -1,11 +1,13 @@
-@media (max-width: 1350px)
+@media (max-width: 1345px)
     .test
+        padding: 0px 80px 10px 80px
         &_block
-            &_first
-                width: 75%
-                height: 100%
-    
-@media (max-width: 768px)
+            &_photo
+                img
+                    width: 320px
+                    height: 320px
+
+@media (max-width: 1024px)
     header
         min-height: 540px
         padding: 37px 39px 0 39px
@@ -107,11 +109,10 @@
         &_footer
             margin-top: 80px
 
-@media (max-width: 376px)
+@media (max-width: 730px)
     .xs-hidden
         display: none
     header
-        max-width: 376px
         min-height: 482px
         padding: 37px 16px 0 16px 
         .top
